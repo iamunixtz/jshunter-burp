@@ -2,8 +2,6 @@
 
 <img src="https://raw.githubusercontent.com/iamunixtz/jshunter-burp/main/burp-suite-banner.svg" alt="JSHunter Burp Suite Extension" width="100%">
 
-
-
 A powerful Burp Suite extension that automatically detects JavaScript URLs from HTTP traffic, scans them using TruffleHog for secrets detection, and sends findings to Discord webhooks in real-time.
 
 ## Features
@@ -21,12 +19,32 @@ A powerful Burp Suite extension that automatically detects JavaScript URLs from 
 
 ## Workflow
 
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/0c3a0843-c3f7-436b-a216-259f16d41b9e" />
+<img src="https://raw.githubusercontent.com/iamunixtz/jshunter-burp/main/js-secret-hunter-workflow.svg" alt="JS-Secret-Hunter Workflow" width="100%">
 
 ### Process Flow
 1. **Burp Suite** monitors HTTP traffic and detects JavaScript URLs
 2. **TruffleHog** scans the JavaScript files for secrets and vulnerabilities
 3. **Discord** receives real-time alerts about discovered secrets
+
+### Detailed Workflow
+
+```mermaid
+graph TD
+    A[HTTP Traffic] --> B{Contains JS URL?}
+    B -->|Yes| C[Download JS File]
+    B -->|No| D[Continue Monitoring]
+    C --> E[Save to Temp File]
+    E --> F[Run TruffleHog Scan]
+    F --> G{Secrets Found?}
+    G -->|Yes| H[Add to Burp Findings]
+    G -->|No| I[Clean Up Temp File]
+    H --> J{Discord Enabled?}
+    J -->|Yes| K[Send to Discord Webhook]
+    J -->|No| L[Display in UI]
+    K --> L
+    I --> D
+    L --> D
+```
 
 ## Prerequisites
 
