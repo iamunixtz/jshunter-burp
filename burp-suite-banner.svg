@@ -1,0 +1,27 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f7931e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#bgGradient)"/>
+  
+  <!-- Burp Suite Icon -->
+  <rect x="50" y="50" width="100" height="100" rx="15" fill="white" opacity="0.9"/>
+  <path d="M70 80 L130 80 L120 100 L80 100 Z" fill="#ff6b35"/>
+  <path d="M70 100 L130 100 L120 120 L80 120 Z" fill="#f7931e"/>
+  <path d="M70 120 L130 120 L120 140 L80 140 Z" fill="#ff6b35"/>
+  
+  <!-- Text -->
+  <text x="200" y="90" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">JSHunter</text>
+  <text x="200" y="130" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.9">Burp Suite Extension</text>
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="16" fill="white" opacity="0.8">Automatic JavaScript URL Detection &amp; Secret Scanning</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="700" cy="50" r="20" fill="white" opacity="0.2"/>
+  <circle cx="750" cy="100" r="15" fill="white" opacity="0.3"/>
+  <circle cx="720" cy="150" r="25" fill="white" opacity="0.1"/>
+</svg>
