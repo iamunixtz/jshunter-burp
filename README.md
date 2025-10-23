@@ -88,7 +88,7 @@ choco install trufflehog
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/jshunter-burp.git
+   git clone https://github.com/iamunixtz/jshunter-burp.git
    cd jshunter-burp
    ```
 
@@ -230,8 +230,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/jshunter-burp/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/jshunter-burp/discussions)
+- **Issues**: [GitHub Issues](https://github.com/iamunixtz/jshunter-burp/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/iamunixtz/jshunter-burp/discussions)
 - **Burp Suite**: [PortSwigger Documentation](https://portswigger.net/burp/documentation)
 
 ## Acknowledgments
